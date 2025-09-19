@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Ruff
+.ruff_cache
+
+# Mine
+data/
+concepts/
+models/
+*ace_data*/
+ace_data_dir/
+enhanced_ace_data_dir/
+patch_grids/
+sample_images/
+detections/
+results_summaries_pre_blobs/
+
+no/

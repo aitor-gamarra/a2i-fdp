@@ -1,0 +1,65 @@
+[project]
+name = "ace-yolo11"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.12.3"
+dependencies = [
+    "datasets>=4.0.0",
+    "matplotlib>=3.10.3",
+    "scikit-image>=0.25.2",
+    "scikit-learn>=1.7.1",
+    "tcav>=0.2.2",
+    "tensorflow>=2.19.0",
+    "torchvision>=0.22.1",
+    "ultralytics>=8.3.170",
+    "protobuf~=3.20.0",
+    "torchsummary>=1.5.1",
+    "sam2>=1.1.0",
+    "scipy>=1.16.0",
+    "visualtorch>=0.2.4",
+    "torchviz>=0.0.3",
+    "seaborn>=0.13.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.30.1",
+    "ruff>=0.12.5",
+]
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".ipynb_checkpoints",
+    ".ruff_cache",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "venv",
+]
+
+line-length = 88
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+ignore = []
+fixable = ["F401"]
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
